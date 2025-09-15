@@ -2,9 +2,9 @@
 
 export interface InterestParams {
   principal: number;
-  rate: InterestRate; // Annual interest rate in percentage
-  duration: Duration; // 'Daily' | 'Monthly' | 'Yearly'
-  time?: number; // Optional: defaults to 1
+  rate: InterestRate;
+  duration: Duration;
+  time?: number;
 }
 
 export type Duration = "Daily" | "Monthly" | "Yearly";
@@ -22,4 +22,5 @@ export type InterestRate =
   | 12
   | 13
   | 14
+
   | 15;
